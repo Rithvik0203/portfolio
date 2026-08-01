@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rithvik Bikki | Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Rithvik Bikki - Computer Engineering Master's Student specializing in Digital IC Design, Verification, and VLSI Systems." />
+  
+  <!-- Open Graph & Social Sharing Meta Tags -->
+  <meta property="og:title" content="Rithvik Bikki | Portfolio" />
+  <meta property="og:description" content="Portfolio of Rithvik Bikki - Computer Engineering Master's Student specializing in Digital IC Design, Verification, and VLSI Systems." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rithvik Bikki | Portfolio" />
+  <meta name="twitter:description" content="Portfolio of Rithvik Bikki - Computer Engineering Master's Student specializing in Digital IC Design, Verification, and VLSI Systems." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root,
+    [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --color-bg: #f7f6f2;
+      --color-surface: #f9f8f5;
+      --color-surface-2: #fbfbf9;
+      --color-border: #d4d1ca;
+      --color-divider: #dcd9d5;
+      --color-text: #28251d;
+      --color-text-muted: #6b6a65;
+      --color-text-faint: #a19f98;
+      --color-text-inverse: #f9f8f4;
+      --color-primary: #01696f;
+      --color-primary-hover: #0c4e54;
+      --color-primary-highlight: #dbe8e5;
+      --radius-sm: 0.375rem;
+      --radius-md: 0.5rem;
+      --radius-lg: 0.75rem;
+      --radius-xl: 1rem;
+      --radius-full: 9999px;
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+      --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+      --content-width: 1100px;
+      --font-display: 'Instrument Serif', Georgia, serif;
+      --font-body: 'Inter', Arial, sans-serif;
+    }
+
+    [data-theme="dark"] {
+      --color-bg: #171614;
+      --color-surface: #1c1b19;
+      --color-surface-2: #22211f;
+      --color-border: #393836;
+      --color-divider: #2a2927;
+      --color-text: #ece8de;
+      --color-text-muted: #b7b2a8;
+      --color-text-faint: #817d76;
+      --color-text-inverse: #171614;
+      --color-primary: #64b5be;
+      --color-primary-hover: #7ac7d0;
+      --color-primary-highlight: #2a3535;
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.25);
+      --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      line-height: 1.6;
+      background: var(--color-bg);
+      color: var(--color-text);
+    }
+
+    img,
+    svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+      border: 0;
+      background: none;
+      cursor: pointer;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 3px;
+      border-radius: var(--radius-sm);
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+    }
+
+    .skip-link:focus {
+      left: var(--space-4);
+      top: var(--space-4);
+      background: var(--color-surface);
+      padding: var(--space-3) var(--space-4);
+      border-radius: var(--radius-md);
+      z-index: 100;
+    }
+
+    .container {
+      width: min(calc(100% - 2rem), var(--content-width));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(14px);
+      background: color-mix(in srgb, var(--color-bg) 88%, transparent);
+      border-bottom: 1px solid var(--color-divider);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      padding: var(--space-4) 0;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-3);
+      font-weight: 700;
+      font-size: var(--text-sm);
+      letter-spacing: 0.02em;
+    }
+
+    .brand-mark {
+      width: 2rem;
+      height: 2rem;
+      padding: 0.35rem;
+      border-radius: var(--radius-md);
+      background: var(--color-primary-highlight);
+      color: var(--color-primary);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      flex-wrap: wrap;
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      color: var(--color-text);
+    }
+
+    .theme-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.75rem;
+      height: 2.75rem;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-full);
+      background: var(--color-surface);
+    }
+
+    .hero {
+      padding: clamp(var(--space-12), 10vw, var(--space-20)) 0 var(--space-12);
+    }
+
+    .hero-grid {
+      display: grid;
+      gap: var(--space-8);
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: var(--space-4);
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-full);
+      background: var(--color-primary-highlight);
+      color: var(--color-primary);
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-size: var(--text-2xl);
+      line-height: 1.05;
+      margin-bottom: var(--space-4);
+      max-width: 14ch;
+    }
+
+    .hero p {
+      color: var(--color-text-muted);
+      max-width: 60ch;
+      margin-bottom: var(--space-6);
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0.85rem 1.2rem;
+      border-radius: var(--radius-full);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      transition: transform var(--transition), background var(--transition), color var(--transition), border-color var(--transition);
+      border: 1px solid transparent;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background: var(--color-primary);
+      color: var(--color-text-inverse);
+    }
+
+    .btn-primary:hover {
+      background: var(--color-primary-hover);
+    }
+
+    .btn-secondary {
+      background: var(--color-surface);
+      border-color: var(--color-border);
+    }
+
+    .hero-card {
+      background: linear-gradient(180deg, var(--color-surface), var(--color-surface-2));
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: var(--space-6);
+      box-shadow: var(--shadow-md);
+    }
+
+    .stats {
+      display: grid;
+      gap: var(--space-4);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin-top: var(--space-6);
+    }
+
+    .stat {
+      padding: var(--space-4);
+      border-radius: var(--radius-lg);
+      background: var(--color-bg);
+      border: 1px solid var(--color-divider);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: var(--text-lg);
+      margin-bottom: var(--space-1);
+    }
+
+    section {
+      padding: var(--space-12) 0;
+      border-top: 1px solid var(--color-divider);
+    }
+
+    h2 {
+      font-size: var(--text-xl);
+      font-family: var(--font-display);
+      line-height: 1.1;
+      margin-bottom: var(--space-3);
+    }
+
+    .section-intro {
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-8);
+      max-width: 60ch;
+    }
+
+    .about-grid,
+    .contact-grid {
+      display: grid;
+      gap: var(--space-6);
+    }
+
+    .card-grid {
+      display: grid;
+      gap: var(--space-5);
+    }
+
+    .project-card,
+    .info-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: var(--space-5);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .project-card-header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-1);
+      margin-bottom: var(--space-3);
+    }
+
+    .project-card h3,
+    .info-card h3 {
+      font-size: var(--text-lg);
+    }
+
+    .project-date {
+      font-size: var(--text-xs);
+      color: var(--color-text-faint);
+      font-weight: 600;
+    }
+
+    .project-card ul,
+    .info-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 var(--space-4) 0;
+      color: var(--color-text-muted);
+      font-size: var(--text-sm);
+      font-weight: 400;
+    }
+
+    .project-card ul p,
+    .info-card ul p {
+      margin-bottom: var(--space-3);
+    }
+
+    .project-card ul p:last-child,
+    .info-card ul p:last-child {
+      margin-bottom: 0;
+    }
+
+    .project-card li,
+    .info-card li {
+      margin-bottom: var(--space-2);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      margin-bottom: var(--space-4);
+    }
+
+    .tag {
+      padding: 0.35rem 0.7rem;
+      border-radius: var(--radius-full);
+      background: var(--color-primary-highlight);
+      color: var(--color-primary);
+      font-size: var(--text-xs);
+      font-weight: 600;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: var(--text-xs);
+      font-weight: 600;
+      color: var(--color-primary);
+      transition: color var(--transition);
+      margin-top: var(--space-1);
+    }
+
+    .project-link:hover {
+      color: var(--color-primary-hover);
+      text-decoration: underline;
+    }
+
+    .project-link svg {
+      width: 1rem;
+      height: 1rem;
+      flex-shrink: 0;
+    }
+
+    .list {
+      list-style: none;
+      display: grid;
+      gap: var(--space-3);
+      color: var(--color-text-muted);
+    }
+
+    .contact-list a {
+      color: var(--color-primary);
+      font-weight: 600;
+    }
+
+    .site-footer {
+      padding: var(--space-8) 0 var(--space-12);
+      color: var(--color-text-muted);
+      font-size: var(--text-sm);
+    }
+
+    @media (min-width: 800px) {
+
+      .hero-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1.15fr 0.85fr;
+      }
+
+      .card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Go to homepage">
+        <svg class="brand-mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 18V6h7.5a4 4 0 1 1 0 8H9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M9 14l7 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        <span>Rithvik Bikki</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
+          <span aria-hidden="true">☾</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Portfolio</span>
+          <h1>Hi, My name is Rithvik Bikki, I am a Computer Engineer.</h1>
+          <p>
+            I am a Master's student in Computer Engineering at Texas A&M University specializing in Digital & Analog
+            Integrated Circuit Design, RTL/SystemVerilog development, UVM Verification, and VLSI Systems. I bring
+            hands-on experience in CPU pipelines, crossbar verification, RF circuits, and physical layout optimization.
+          </p>
+          <div class="button-row">
+            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn btn-secondary" href="mailto:rithvikbikki@gmail.com">Get in touch</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Quick profile summary">
+          <h2 style="font-size: var(--text-lg); font-family: var(--font-body); margin-bottom: var(--space-2);">Quick
+            Intro</h2>
+          <p style="margin-bottom: 0; color: var(--color-text-muted);">
+            Specializing in Digital IC Design, UVM Verification, Analog/Mixed-Signal IC, and SoC Integration.
+          </p>
+          <div class="stats">
+            <div class="stat">
+              <strong>7</strong>
+              <span>IC/VLSI Projects</span>
+            </div>
+            <div class="stat">
+              <strong>95%+</strong>
+              <span>UVM Coverage</span>
+            </div>
+            <div class="stat">
+              <strong>M.S.</strong>
+              <span>Texas A&M Univ.</span>
+            </div>
+            <div class="stat">
+              <strong>B.S.</strong>
+              <span>Univ. of Washington</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about-grid">
+        <div>
+          <h2>About Me</h2>
+          <p class="section-intro">
+            I am a Computer Engineering Master's student with a deep passion for silicon design, digital architecture,
+            and rigorous hardware verification. My experience spans full UVM testbench design, RTL pipeline development,
+            physical IC schematic & layout, and RF data validation. I thrive on root-causing complex hardware bugs,
+            optimizing chip microarchitecture, and building reliable hardware description systems.
+          </p>
+        </div>
+        <div class="info-card">
+          <h3>Education</h3>
+          <ul class="list" style="margin-top: var(--space-3);">
+            <li>
+              <strong>Texas A&M University</strong><br>
+              Master of Science, Computer Engineering
+            </li>
+            <li>
+              <strong>University of Washington</strong><br>
+              Bachelor of Science, Electrical and Computer Engineering
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>Skills & Expertise</h2>
+        <p class="section-intro">
+          Comprehensive technical skill set across integrated circuit design, design verification methodologies, EDA
+          tools, and software languages.
+        </p>
+
+        <div class="card-grid">
+          <div class="info-card">
+            <h3>Technical & Domain Expertise</h3>
+            <div class="tags" style="margin-top: var(--space-3);">
+              <span class="tag">Digital Design</span>
+              <span class="tag">Computer Architecture</span>
+              <span class="tag">RTL / SystemVerilog</span>
+              <span class="tag">UVM</span>
+              <span class="tag">CPU & Register File Design</span>
+              <span class="tag">SoC Integration</span>
+              <span class="tag">IC Design & Validation</span>
+              <span class="tag">Hardware Verification</span>
+              <span class="tag">CDC & Metastability</span>
+              <span class="tag">Floorplanning</span>
+              <span class="tag">Place-and-Route</span>
+              <span class="tag">Static Timing Analysis (STA)</span>
+              <span class="tag">DRC / LVS Closure</span>
+              <span class="tag">SVA (Assertions)</span>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h3>EDA Tools & Hardware Platforms</h3>
+            <div class="tags" style="margin-top: var(--space-3);">
+              <span class="tag">Cadence Virtuoso</span>
+              <span class="tag">HSPICE</span>
+              <span class="tag">Cadence Spectre</span>
+              <span class="tag">Cadence xrun / vManager</span>
+              <span class="tag">SimVision</span>
+              <span class="tag">ModelSim / QuestaSim</span>
+              <span class="tag">Synopsys Design Compiler</span>
+              <span class="tag">BaseJump STL</span>
+              <span class="tag">KiCAD</span>
+              <span class="tag">Altium</span>
+              <span class="tag">I2C Protocol</span>
+              <span class="tag">SolidWorks</span>
+              <span class="tag">Fusion360</span>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h3>Programming & Software</h3>
+            <div class="tags" style="margin-top: var(--space-3);">
+              <span class="tag">C</span>
+              <span class="tag">C++</span>
+              <span class="tag">Python</span>
+              <span class="tag">Java</span>
+              <span class="tag">R</span>
+              <span class="tag">MATLAB</span>
+              <span class="tag">Assembly</span>
+              <span class="tag">Bash</span>
+              <span class="tag">Git</span>
+              <span class="tag">SystemVerilog</span>
+              <span class="tag">Verilog</span>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h3>Collaboration & Management</h3>
+            <div class="tags" style="margin-top: var(--space-3);">
+              <span class="tag">Kanban Workflows</span>
+              <span class="tag">Technical Documentation</span>
+              <span class="tag">Microsoft Office</span>
+              <span class="tag">Teams</span>
+              <span class="tag">Slack</span>
+              <span class="tag">Google Workspace</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">Zoom</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <p class="section-intro">
+          Hands-on IC design, UVM testbench verification, CPU datapath development, and board-level hardware projects.
+        </p>
+
+        <div class="card-grid">
+          <article class="project-card">
+            <div class="project-card-header">
+              <h3>MESI Protocol Multi-Core Cache Verification</h3>
+              <span class="project-date">Jan 2026 – Apr 2026</span>
+            </div>
+            <ul>
+              <p>Completed a UVM testbench for a MESI protocol-based 4-core cache hierarchy, adding constrained-random
+                sequences, virtual sequences, and directed tests, achieving coverage closure via Cadence vManager
+                regression against a vPlan.</p>
+              <p>Authored SystemVerilog assertions in cpu_lv1_interface.sv and system_bus_interface.sv to validate
+                signal integrity, timing constraints, and protocol compliance during read/write operations.</p>
+              <p>Implemented covergroups covering all MESI states, valid state transitions, and LRU replacement policy
+                scenarios using illegal_bins for unsupported transitions; identified and reported five embedded RTL bugs
+                with waveform evidence and root-cause analysis.</p>
+            </ul>
+            <div class="tags">
+              <span class="tag">SystemVerilog</span>
+              <span class="tag">UVM</span>
+              <span class="tag">Cadence xrun</span>
+              <span class="tag">vManager</span>
+              <span class="tag">SimVision</span>
+              <span class="tag">SVA</span>
+            </div>
+            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer"
+              aria-label="View MESI Protocol Multi-Core Cache Verification repository on GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                </path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg>
+              <span>View on GitHub</span>
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-header">
+              <h3>HyperTransport Advanced X-Bar (HTAX) Regression</h3>
+              <span class="project-date">Nov 2025 – Dec 2025</span>
+            </div>
+            <ul>
+              <p>Extended a UVM testbench to verify a multi-port HTAX crossbar using constrained-random stimulus,
+                virtual sequences, and fork-join parallel traffic generation, achieving 95%+ code coverage and 100%
+                functional coverage closure.</p>
+              <p>Executed large-scale regression using Cadence xrun/vManager, analyzed coverage holes, and debugged
+                failing long/short packet scenarios via waveform analysis to isolate DUT bugs.</p>
+              <p>Produced a formal bug report with root-cause analysis and a recommended RTL fix, tracking verification
+                closure against the project vPlan.</p>
+            </ul>
+            <div class="tags">
+              <span class="tag">UVM</span>
+              <span class="tag">SystemVerilog</span>
+              <span class="tag">Cadence xrun</span>
+              <span class="tag">vManager</span>
+              <span class="tag">Coverage Closure</span>
+            </div>
+            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer"
+              aria-label="View HyperTransport Advanced X-Bar Regression repository on GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                </path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg>
+              <span>View on GitHub</span>
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-header">
+              <h3>RISC-V RV32I Processor Verification</h3>
+              <span class="project-date">May 2025 – Aug 2025</span>
+            </div>
+            <ul>
+              <p>Developed a full UVM verification environment for an RV32I processor featuring constrained-random
+                instruction generation, transaction-level monitors, scoreboarding, and functional coverage collection.
+              </p>
+              <p>Implemented a reference model to verify register and memory state against DUT execution, enabling
+                automated detection of architectural mismatches across randomized test scenarios.</p>
+              <p>Created SystemVerilog Assertions (SVA) to verify ISA and protocol correctness and developed regression
+                scripts for automated simulation runs, achieving greater than 95% instruction and branch coverage.</p>
+            </ul>
+            <div class="tags">
+              <span class="tag">SystemVerilog</span>
+              <span class="tag">UVM</span>
+              <span class="tag">SVA</span>
+              <span class="tag">Regression Scripting</span>
+              <span class="tag">RISC-V</span>
+            </div>
+            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer"
+              aria-label="View RISC-V RV32I Processor Verification repository on GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                </path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg>
+              <span>View on GitHub</span>
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-header">
+              <h3>8-Bit Adder IC Design (Cadence Virtuoso)</h3>
+              <span class="project-date">Aug 2025 – Dec 2025</span>
+            </div>
+            <ul>
+              <p>Designed and implemented an 8-bit adder schematic and layout in Cadence Virtuoso.</p>
+              <p>Performed physical verification using Cadence Calibre, achieving successful DRC and LVS closure.</p>
+              <p>Validated functionality through simulation and iterative layout optimization.</p>
+            </ul>
+            <div class="tags">
+              <span class="tag">Cadence Virtuoso</span>
+              <span class="tag">Cadence Calibre</span>
+              <span class="tag">DRC / LVS</span>
+              <span class="tag">Analog IC</span>
+              <span class="tag">Layout Design</span>
+            </div>
+            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer"
+              aria-label="View 8-Bit Adder IC Design repository on GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                </path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg>
+              <span>View on GitHub</span>
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-header">
+              <h3>STM32 PCB USB RF Dongle</h3>
+              <span class="project-date">June 2025 – July 2025</span>
+            </div>
+            <ul>
+              <p>Designed schematic, PCB layout, and routing in KiCad for an STM32L4-based RF-to-USB dongle using an
+                NRF24 2.4 GHz transceiver.</p>
+              <p>Designed USB interface, power supply, crystal oscillator, decoupling network, SWD programming
+                interface, and RF signal routing, ensuring reliable bring-up and signal integrity.</p>
+              <p>Performed Electrical Rules Check (ERC), Design Rule Check (DRC), annotation, footprint assignment, and
+                3D model verification to produce a manufacturable PCB.</p>
+            </ul>
+            <div class="tags">
+              <span class="tag">KiCad</span>
+              <span class="tag">STM32L4</span>
+              <span class="tag">NRF24 RF</span>
+              <span class="tag">PCB Design</span>
+              <span class="tag">Signal Integrity</span>
+            </div>
+            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer"
+              aria-label="View STM32 PCB USB RF Dongle repository on GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                </path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg>
+              <span>View on GitHub</span>
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-header">
+              <h3>Complete VLSI System Design</h3>
+              <span class="project-date">Jan 2025 – Feb 2025</span>
+            </div>
+            <ul>
+              <p>Designed a full SoC with BaseJump STL, integrating on-chip memory, floorplanning, and place-and-route.
+              </p>
+              <p>Addressed CDC/metastability challenges and conducted static timing analysis (STA) to verify timing
+                closure for the chip.</p>
+              <p>Built and benchmarked a GCD accelerator against a 32-bit RISC-V CPU (RV32IM ISA) using bsg_link for
+                performance evaluation.</p>
+            </ul>
+            <div class="tags">
+              <span class="tag">BaseJump STL</span>
+              <span class="tag">SoC Integration</span>
+              <span class="tag">STA</span>
+              <span class="tag">CDC</span>
+              <span class="tag">RISC-V</span>
+            </div>
+            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer"
+              aria-label="View Complete VLSI System Design repository on GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                </path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg>
+              <span>View on GitHub</span>
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-header">
+              <h3>Register File Design</h3>
+              <span class="project-date">Dec 2024 – Jan 2025</span>
+            </div>
+            <ul>
+              <p>Designed a 13x16 register file using latches, integrating schematic and layout in Cadence Virtuoso.
+              </p>
+              <p>Optimized the design for efficiency and scalability, verifying functionality with control logic and
+                HSPICE/Spectre testbenches.</p>
+              <p>Resolved physical design challenges using DRC and LVS checks to ensure manufacturability.</p>
+            </ul>
+            <div class="tags">
+              <span class="tag">Cadence Virtuoso</span>
+              <span class="tag">HSPICE</span>
+              <span class="tag">Spectre</span>
+              <span class="tag">DRC / LVS</span>
+            </div>
+            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer"
+              aria-label="View Register File Design repository on GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                </path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg>
+              <span>View on GitHub</span>
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-header">
+              <h3>64-bit ARM Single-Cycle Pipelined CPU Design</h3>
+              <span class="project-date">Jul 2024 – Aug 2024</span>
+            </div>
+            <ul>
+              <p>Implemented a 64-bit ARM CPU with all five pipeline stages (IF, ID, EX, MEM, WB), including the ALU,
+                register file, memory, and data forwarding logic.</p>
+              <p>Developed RTL control logic to manage datapath and instruction flow across the pipeline.</p>
+              <p>Validated functionality through simulation, confirming correct hazard resolution and data forwarding
+                across pipeline stages.</p>
+            </ul>
+            <div class="tags">
+              <span class="tag">ARM Architecture</span>
+              <span class="tag">RTL</span>
+              <span class="tag">Pipelining</span>
+              <span class="tag">Hazard Resolution</span>
+            </div>
+            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer"
+              aria-label="View 64-bit ARM Single-Cycle Pipelined CPU Design repository on GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                </path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg>
+              <span>View on GitHub</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <h2>Relevant Experience</h2>
+        <p class="section-intro">
+          Research and laboratory experience in RF circuit validation and technical analysis.
+        </p>
+        <div class="info-card">
+          <div class="project-card-header">
+            <h3>SEAL LAB — Associate</h3>
+            <span class="project-date">Jun 2024 – Jan 2025</span>
+          </div>
+          <ul>
+            <p>Conducted RF circuit research and data validation for a meteor detection system using HSPICE and Cadence
+              Spectre, comparing results against NASA benchmarks.</p>
+            <p>Supported project workflows in a Kanban environment and co-authored technical documentation, lab reports,
+              and research papers, leveraging Python for data analysis.</p>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <div class="container">
+        <h2>Certifications & Credentials</h2>
+        <p class="section-intro">
+          Professional certifications, specialized training courses, and verified technical credentials.
+        </p>
+
+        <div class="card-grid">
+          <div class="info-card">
+            <div class="project-card-header">
+              <h3>SystemVerilog Accelerated Verification with UVM v1.2.6(Online)</h3>
+              <span class="project-date">Cadence • Issued Month Year</span>
+            </div>
+            <ul>
+              <p>Description of the certification, topics mastered, core tools/technologies validated, or credential
+                details.</p>
+            </ul>
+            <div class="tags" style="margin-top: var(--space-3);">
+              <span class="tag">SystemVerilog</span>
+              <span class="tag">UVM</span>
+              <span class="tag">Verification</span>
+            </div>
+            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer"
+              aria-label="View Certification Credential">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              <span>View Credential / Certificate</span>
+            </a>
+          </div>
+
+          <div class="info-card">
+            <div class="project-card-header">
+              <h3>SystemVerilog for Design and Verification v25.03 (Online)</h3>
+              <span class="project-date">Cadence • Issued Month Year</span>
+            </div>
+            <ul>
+              <p>Description of the certification, topics mastered, core tools/technologies validated, or credential
+                details.</p>
+            </ul>
+            <div class="tags" style="margin-top: var(--space-3);">
+              <span class="tag">Digital IC Design</span>
+              <span class="tag">VLSI</span>
+              <span class="tag">Cadence</span>
+            </div>
+            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer"
+              aria-label="View Certification Credential">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              <span>View Credential / Certificate</span>
+            </a>
+          </div>
+
+          <div class="info-card">
+            <div class="project-card-header">
+              <h3>VIP Basic Building Blocks and Usage v1.0 (Online)</h3>
+              <span class="project-date">Cadence • Issued Month Year</span>
+            </div>
+            <ul>
+              <p>Description of the certification, topics mastered, core tools/technologies validated, or credential
+                details.</p>
+            </ul>
+            <div class="tags" style="margin-top: var(--space-3);">
+              <span class="tag">Digital IC Design</span>
+              <span class="tag">VLSI</span>
+              <span class="tag">Cadence</span>
+            </div>
+            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer"
+              aria-label="View Certification Credential">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              <span>View Credential / Certificate</span>
+            </a>
+          </div>
+
+          <div class="info-card">
+            <div class="project-card-header">
+              <h3>Cadence RTL-to-GDSII Flow v7.0 (Online)</h3>
+              <span class="project-date">Cadence • Issued Month Year</span>
+            </div>
+            <ul>
+              <p>Description of the certification, topics mastered, core tools/technologies validated, or credential
+                details.</p>
+            </ul>
+            <div class="tags" style="margin-top: var(--space-3);">
+              <span class="tag">Digital IC Design</span>
+              <span class="tag">VLSI</span>
+              <span class="tag">Cadence</span>
+            </div>
+            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer"
+              aria-label="View Certification Credential">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              <span>View Credential / Certificate</span>
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact-grid">
+        <div>
+          <h2>Contact Information</h2>
+          <p class="section-intro">
+            Feel free to reach out for opportunities in Digital IC Design, Verification (UVM), RTL Development, or
+            Analog IC Engineering.
+          </p>
+        </div>
+        <div class="info-card">
+          <h3>Contact Details</h3>
+          <ul class="list contact-list">
+            <li>Email: <a href="mailto:rithvikbikki@gmail.com">rithvikbikki@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/rithvik-b-b41102219" target="_blank"
+                rel="noopener noreferrer">linkedin.com/in/rithvik-b-b41102219</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Rithvik Bikki. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const toggle = document.querySelector('[data-theme-toggle]');
+      const root = document.documentElement;
+      let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+
+      function setTheme(nextTheme) {
+        theme = nextTheme;
+        root.setAttribute('data-theme', theme);
+        if (toggle) {
+          toggle.innerHTML = theme === 'dark' ? '<span aria-hidden="true">☀</span>' : '<span aria-hidden="true">☾</span>';
+          toggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+        }
+      }
+
+      setTheme(theme);
+      toggle?.addEventListener('click', function () {
+        setTheme(theme === 'dark' ? 'light' : 'dark');
+      });
+    })();
+  </script>
+</body>
+
+</html>
